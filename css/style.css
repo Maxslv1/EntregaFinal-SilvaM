@@ -134,32 +134,122 @@ h2 {
     padding-left: 150px;
     padding-right: 150px;
 }
-.hero {
-    padding: 2rem 1rem;
-}
-.image-container img {
-    border-radius: 10px;
-    width: 450px;
-    height: 350px;
-    margin: 20px;
-}
-.imagenteam {
-    box-shadow: rgba(247, 28, 28, 0.4) -5px 5px, rgba(240, 46, 46, 0.3) -10px 10px, rgba(240, 46, 46, 0.2) -15px 15px, rgba(240, 46, 46, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
 
-@media (max-width: 576px) {
-    .hero h1 {
-        font-size: 24px;
-        text-align: center;
+/* lo trabajado en nuestros locales */ 
+
+.hero {
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  /* Ajustes generales para las imágenes */
+  .locales {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo para las secciones container3 */
+  .container3 {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para los párrafos en container3 */
+  .container3 p {
+    margin-bottom: 20px;
+  }
+  
+  /* Media query para pantallas pequeñas (max-width: 768px) */
+  @media (max-width: 768px) {
+    .fs-2 {
+      font-size: 1.5rem;
     }
+  
+    .fs-3 {
+      font-size: 1.2rem;
+    }
+  
+    .hero h1,
+    .hero h2 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
     .container3 p {
-        padding: 0 1rem;
-        font-size: 16px;
+      font-size: 1rem;
+      padding: 0 10px;
+      text-align: center;
     }
-    .container4 .col-md-4 {
-        margin-bottom: 1rem;
+  
+    .ps-5 {
+      padding-left: 1rem !important;
     }
-}
+  
+    /* Asegurarse de que las imágenes se ajusten al contenedor en pantallas pequeñas */
+    .col-md-5 img,
+    .col-md-4 img,
+    .col-md-7 img,
+    .col-md-8 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Cambios para que las columnas se apilen en pantallas pequeñas */
+    .col-md-5,
+    .col-md-4,
+    .col-md-7,
+    .col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .d-flex {
+      flex-direction: column;
+    }
+  }
+
+ /* lo trabajado en quienes somos */
+
+/* Estilos generales para el contenedor de las imágenes */
+.team_img {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se dispongan en varias filas si es necesario */
+  }
+  
+  /* Estilo para las imágenes */
+  .teamimg {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+    max-width: 500px; /* Tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de aspecto */
+    object-fit: cover; /* Asegura que las imágenes cubran el contenedor sin distorsionarse */
+    margin: 10px; /* Espacio alrededor de cada imagen */
+  }
+  
+  /* Media query para pantallas medianas (max-width: 992px) */
+  @media (max-width: 992px) {
+    .teamimg {
+      max-width: 992px; /* Ajusta el tamaño máximo en pantallas medianas */
+    }
+  }
+  
+  /* Media query para pantallas pequeñas (max-width: 768px) */
+  @media (max-width: 768px) {
+    .teamimg {
+      max-width: 700px; /* Ajusta el tamaño máximo en pantallas pequeñas */
+    }
+  }
+  
+  /* Media query para pantallas extra pequeñas (max-width: 576px) */
+  @media (max-width: 576px) {
+    .teamimg {
+      max-width: 500px; /* Ajusta el tamaño máximo en pantallas extra pequeñas */
+    }
+  }
+
+ 
 
 /* pagina trabajaconnos */
 .form-container {
@@ -186,6 +276,24 @@ h2 {
         font-size: 14px;
     }
 }
+
+/* footer*/ 
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los iconos */
+  }
+  
+  .social-icon {
+    width: 100px; /* Tamaño del icono */
+    height: 100px;
+  }
+  footer {
+    margin-top: 75px;
+  }
+
 /*** animista ***/
 
  @-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
